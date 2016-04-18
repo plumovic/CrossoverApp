@@ -11,13 +11,13 @@ import SpriteKit
 
 class MLMovingGround: SKSpriteNode
 {
-    let NUMBER_OF_SEGMENTS = 5
-    let NUMBER_OF_SEGMENTS2 = 5
-    let NUMBER_OF_SEGMENTS3 = 5
-    let NUMBER_OF_SEGMENTS4 = 5
-    let NUMBER_OF_SEGMENTS5 = 5
-    let NUMBER_OF_SEGMENTS6 = 5
-    let NUMBER_OF_SEGMENTS7 = 5
+    let NUMBER_OF_SEGMENTS = 20
+    let NUMBER_OF_SEGMENTS2 = 20
+    let NUMBER_OF_SEGMENTS3 = 20
+    let NUMBER_OF_SEGMENTS4 = 20
+    let NUMBER_OF_SEGMENTS5 = 20
+    let NUMBER_OF_SEGMENTS6 = 20
+    let NUMBER_OF_SEGMENTS7 = 20
     
     let COLOR_ONE = UIColor(red: 240.0 / 255.0, green: 180 / 255.0, blue: 100 / 255.0, alpha: 1)
     let COLOR_TWO = UIColor(red: 250.0 / 255.0, green: 200 / 255.0, blue: 110 / 255.0, alpha: 1)
@@ -26,7 +26,7 @@ class MLMovingGround: SKSpriteNode
     
     init(size: CGSize)
     {
-        super.init(texture: nil, color: UIColor.brownColor(), size: CGSizeMake(size.width, size.height + 7))
+        super.init(texture: nil, color: UIColor.brownColor(), size: CGSizeMake(size.width, size.height * 2))
         anchorPoint = CGPointMake(0.5, 0)
         
         for var i = 0; i < NUMBER_OF_SEGMENTS; i++
@@ -164,8 +164,10 @@ class MLMovingGround: SKSpriteNode
     
     func start()
     {
-        let move = SKAction.moveByX(0, y: -frame.size.height / 2, duration: 1.0)
-        runAction(move)
+        let move = SKAction.moveByX(0, y: -frame.size.height / 2, duration: 1.8)
+        let restartMove = SKAction.moveToY(0, duration: 0)
+        let moveSequence = SKAction.sequence([move, restartMove])
+        runAction(SKAction.repeatActionForever(moveSequence))
     }
     
 }

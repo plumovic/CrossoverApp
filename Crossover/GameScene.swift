@@ -16,15 +16,14 @@ class GameScene: SKScene
     {
         backgroundColor = UIColor.darkGrayColor()
         
-        let ground = MLMovingGround(size: CGSizeMake(50, frame.size.height))
-        
-        ground.position = CGPointMake(view.frame.size.width / 2 , 0)
-        addChild(ground)
+        movingGround = MLMovingGround(size: CGSizeMake(50, frame.size.height))
+        movingGround.position = CGPointMake(view.frame.size.width / 2 , 0)
+        addChild(movingGround)
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
-        
+        movingGround.start()
     }
    
     override func update(currentTime: CFTimeInterval)
