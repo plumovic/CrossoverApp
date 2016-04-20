@@ -13,14 +13,9 @@ import AVFoundation
 class GameViewController: UIViewController, AVAudioPlayerDelegate
 {
 
-    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet var startButton: UITapGestureRecognizer!
     
     var scene: GameScene!
-    
-    var counter = 23
-    var pressed = false
-    var timer = NSTimer()
     
     var bGSong = AVAudioPlayer()
     
@@ -37,20 +32,6 @@ class GameViewController: UIViewController, AVAudioPlayerDelegate
         playBackgroundMusic("backgroundSong")
     }
     
-    
-    //Timer
-    @IBAction func startButtonTapped(sender: UITapGestureRecognizer)
-    {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: ("updateTimer"), userInfo: nil, repeats: true)
-    }
-    
-    func updateTimer()
-    {
-        timerLabel.text = String("Shot Clock: \(counter--)")
-    }
-    
-    
-
     override func shouldAutorotate() -> Bool
     {
         return true
@@ -96,6 +77,8 @@ class GameViewController: UIViewController, AVAudioPlayerDelegate
             print(error.description)
         }
     }
+    
+    
     
     
 }
