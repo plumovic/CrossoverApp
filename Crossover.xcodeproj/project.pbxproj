@@ -16,7 +16,7 @@
 		3F11770F1CAD8A2700E6E5D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F11770D1CAD8A2700E6E5D7 /* LaunchScreen.storyboard */; };
 		3F11771A1CAD8A2700E6E5D7 /* CrossoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1177191CAD8A2700E6E5D7 /* CrossoverTests.swift */; };
 		3F1177251CAD8A2700E6E5D7 /* CrossoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1177241CAD8A2700E6E5D7 /* CrossoverUITests.swift */; };
-		3F15C2201CC1518D004589BA /* backgroundSong in Resources */ = {isa = PBXBuildFile; fileRef = 3F15C21F1CC1518D004589BA /* backgroundSong */; };
+		3F15C2241CCA861D004589BA /* backgroundSong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F15C2231CCA861D004589BA /* backgroundSong.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		3F1177201CAD8A2700E6E5D7 /* CrossoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1177241CAD8A2700E6E5D7 /* CrossoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossoverUITests.swift; sourceTree = "<group>"; };
 		3F1177261CAD8A2700E6E5D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F15C21F1CC1518D004589BA /* backgroundSong */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundSong; sourceTree = "<group>"; };
+		3F15C2231CCA861D004589BA /* backgroundSong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = backgroundSong.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 		3F1176F41CAD8A2700E6E5D7 = {
 			isa = PBXGroup;
 			children = (
-				3F15C21F1CC1518D004589BA /* backgroundSong */,
+				3F15C2231CCA861D004589BA /* backgroundSong.wav */,
 				3F1176FF1CAD8A2700E6E5D7 /* Crossover */,
 				3F1177181CAD8A2700E6E5D7 /* CrossoverTests */,
 				3F1177231CAD8A2700E6E5D7 /* CrossoverUITests */,
@@ -238,7 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F15C2201CC1518D004589BA /* backgroundSong in Resources */,
+				3F15C2241CCA861D004589BA /* backgroundSong.wav in Resources */,
 				3F11770F1CAD8A2700E6E5D7 /* LaunchScreen.storyboard in Resources */,
 				3F11770C1CAD8A2700E6E5D7 /* Assets.xcassets in Resources */,
 				3F11770A1CAD8A2700E6E5D7 /* Main.storyboard in Resources */,
