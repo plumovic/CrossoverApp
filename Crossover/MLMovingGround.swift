@@ -154,8 +154,6 @@ class MLMovingGround: SKSpriteNode
             segment.position = CGPointMake(150, CGFloat(i) * segment.size.height)
             addChild(segment)
         }
-
-
     }
 
     required init?(coder aDecoder: NSCoder) {
